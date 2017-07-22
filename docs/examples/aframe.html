@@ -41,15 +41,13 @@
       }
     </script>
 
-    <a-scene stats>
+    <a-scene>
       <a-assets>
         <canvas id="canvas" width="1920" height="1080"></canvas>
       </a-assets>
 
       <a-videosphere src="#canvas" rotation="0 180 0"></a-videosphere>
-      <a-camera wasd-controls look-controls>
-        <a-cursor></a-cursor>
-      </a-camera>
+      <a-entity camera look-controls wasd-controls></a-entity>
     </a-scene>
   </body>
 </html>
